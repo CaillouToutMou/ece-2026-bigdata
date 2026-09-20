@@ -7,10 +7,13 @@ authors = [
     { name = "CaillouToutMou", email = "ingamer02@gmail.com" }
 ]
 requires-python = ">=3.9"
-dependencies = []
+dependencies = [
+    "faker>=37.12.0",
+]
 
 [project.scripts]
-work = "work:main"
+dataset-users = "work.dataset_users:main"
+dataset-orders = "work.dataset_orders:main"
 
 [build-system]
 requires = ["uv_build>=0.12.17,<0.13.0"]
